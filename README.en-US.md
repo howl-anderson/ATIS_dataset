@@ -1,10 +1,10 @@
-[README written in English](README.en-US.md)
+[中文版本的 README](README.md)
 ------------------------------
 
 # The ATIS (Airline Travel Information System) Dataset
-本仓库包含了 Python pickle 格式和 Rasa NLU JSON 格式（https://rasa.com/docs/nlu/dataformat/#json-format）的 ATIS Dataset(数据集)，并提供了读取脚本和示例代码。
+This repository contains ATIS Dataset in Python pickle format and Rasa NLU JSON format (https://rasa.com/docs/nlu/dataformat/#json-format)，also this project provide codes to show how extract data from pickle file.
 
-## 数据样本
+## Data Sample
 ```text
    0:         flight: BOS i want to fly from boston at 838 am and arrive in denver at 1110 in the morning EOS
                               BOS                                        O
@@ -29,26 +29,26 @@
                               EOS                                        O
 ```
 
-## 数据统计
-| 样本数 | 词汇数 | 实体数 | 意图数 |
+## Summary of Data
+| Sample Number | Vocabulary Size | Number of Slots | Number of Intents |
 | --- | --- | --- | --- |
-| 4978(训练集)+893(测试集) | 943 | 129 | 26 |
+| 4978(Training set)+893(Testing set) | 943 | 129 | 26 |
 
-## 示例代码
-[summary_data.py](summary_data.py) 中包含了读取原始数据的代码，用户可以参考该代码，实现从原始文件读取数据。
+## Sample Code
+[summary_data.py](summary_data.py) include codes to read data from raw data file，user can learn how to read data.
 
-## 下载
+## Download Data
 
-| 数据格式 | 训练集 | 测试集 |
+| Data Format | Training Set | Testing Set |
 | --- | --- | --- |
-| Python 3 Pickle 格式 | [atis.train.pkl](data/raw_data/ms-cntk-atis/atis.train.pkl) | [atis.test.pkl](data/raw_data/ms-cntk-atis/atis.test.pkl) |
-| Rasa NLU JSON 格式 | [train.json](data/standard_format/rasa/train.json) | [test.json](data/standard_format/rasa/test.json) |
+| Python 3 Pickle Format | [atis.train.pkl](data/raw_data/ms-cntk-atis/atis.train.pkl) | [atis.test.pkl](data/raw_data/ms-cntk-atis/atis.test.pkl) |
+| Rasa NLU JSON Format | [train.json](data/standard_format/rasa/train.json) | [test.json](data/standard_format/rasa/test.json) |
 
 
 
 ## Credit
-* 本项目的原始数据集来自 [ATIS DataSet by siddhadev](https://www.kaggle.com/siddhadev/atis-dataset)，部分代码亦来自此处。
-    * NOTE: `ATIS DataSet by siddhadev` 数据集则来自于 [MicroSoft CNTK Examples](https://github.com/Microsoft/CNTK/tree/master/Examples/LanguageUnderstanding/ATIS/Data)
+* The origin data set come from [ATIS DataSet by siddhadev](https://www.kaggle.com/siddhadev/atis-dataset)，some codes also copied from here。
+    * NOTE: `ATIS DataSet by siddhadev` comes from [MicroSoft CNTK Examples](https://github.com/Microsoft/CNTK/tree/master/Examples/LanguageUnderstanding/ATIS/Data)
 
-## 同类项目
-* https://github.com/mesnilgr/is13 也提供了 ATIS 数据集，但该数据集只有实体数据没有意图数据。
+## Similar Projects
+* https://github.com/mesnilgr/is13 also provide ATIS dataset，but only provide slots data without intent.

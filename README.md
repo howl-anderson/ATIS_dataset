@@ -2,7 +2,7 @@
 ------------------------------
 
 # The ATIS (Airline Travel Information System) Dataset
-本仓库包含了 Python pickle 格式和 Rasa NLU JSON 格式（https://rasa.com/docs/nlu/dataformat/#json-format）的 ATIS Dataset(数据集)，并提供了读取脚本和示例代码。
+本仓库包含了 Python pickle 格式和 Rasa NLU JSON 格式（[https://rasa.com/docs/nlu/dataformat/#json-format](https://rasa.com/docs/nlu/dataformat/#json-format)）的 ATIS Dataset(数据集)，并提供了读取脚本和示例代码。
 
 ## 数据样本
 ```text

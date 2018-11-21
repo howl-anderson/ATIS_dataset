@@ -2,7 +2,7 @@
 ------------------------------
 
 # The ATIS (Airline Travel Information System) Dataset
-This repository contains ATIS Dataset in Python pickle format and Rasa NLU JSON format (https://rasa.com/docs/nlu/dataformat/#json-format)，also this project provide codes to show how extract data from pickle file.
+This repository contains ATIS Dataset in Python pickle format and Rasa NLU JSON format ([https://rasa.com/docs/nlu/dataformat/#json-format](https://rasa.com/docs/nlu/dataformat/#json-format)), also this project provide codes to show how extract data from pickle file.
 
 ## Data Sample
 ```text
@@ -51,4 +51,4 @@ This repository contains ATIS Dataset in Python pickle format and Rasa NLU JSON 
     * NOTE: `ATIS DataSet by siddhadev` comes from [MicroSoft CNTK Examples](https://github.com/Microsoft/CNTK/tree/master/Examples/LanguageUnderstanding/ATIS/Data)
 
 ## Similar Projects
-* https://github.com/mesnilgr/is13 also provide ATIS dataset，but only provide slots data without intent.
+* https://github.com/mesnilgr/is13 also provide ATIS dataset, but only provide slots data without intent.

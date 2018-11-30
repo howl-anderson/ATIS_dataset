@@ -5,6 +5,7 @@
 This repository contains ATIS Dataset in Python pickle format and Rasa NLU JSON format ([https://rasa.com/docs/nlu/dataformat/#json-format](https://rasa.com/docs/nlu/dataformat/#json-format)), also this project provide codes to show how extract data from pickle file.
 
 ## Data Sample
+### Raw format
 ```text
    0:         flight: BOS i want to fly from boston at 838 am and arrive in denver at 1110 in the morning EOS
                               BOS                                        O
@@ -27,6 +28,41 @@ This repository contains ATIS Dataset in Python pickle format and Rasa NLU JSON 
                               the                                        O
                           morning              B-arrive_time.period_of_day
                               EOS                                        O
+```
+
+### Rasa NLU JSON format
+```json
+{
+    "rasa_nlu_data": {
+        "common_examples": [
+            {
+                "text": "i would like to find a flight from charlotte to las vegas that makes a stop in st. louis",
+                "intent": "flight",
+                "entities": [
+                    {
+                        "start": 35,
+                        "end": 44,
+                        "value": "charlotte",
+                        "entity": "fromloc.city_name"
+                    },
+                    {
+                        "start": 48,
+                        "end": 57,
+                        "value": "las vegas",
+                        "entity": "toloc.city_name"
+                    },
+                    {
+                        "start": 79,
+                        "end": 88,
+                        "value": "st. louis",
+                        "entity": "stoploc.city_name"
+                    }
+                ]
+            },
+            ...
+        ]
+    }
+}
 ```
 
 ## Summary of Data
